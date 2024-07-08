@@ -148,3 +148,5 @@ int main() {
                             if (seleccionjugador == 1) cout << "Piedra" << endl;
                             else if (seleccionjugador == 2) cout << "Papel" << endl;
                             else if (seleccionjugador == 3) cout << "Tijera" << endl;
+
+                            
