@@ -121,4 +121,13 @@ int main() {
                     case 2: {
                         bool jugarOtraVez = true;
                         do {
-                            system("cls");                                                                                                                                                                                                                               
+                            system("cls");
+
+                            srand(static_cast<unsigned int>(time(nullptr)));
+
+                            int seleccionjugador;
+
+                            cout << "--- Bienvenido a Piedra Papel o Tijera! ---" << endl << endl;
+                            cout << "Piensa en una opcion para jugar" << endl;
+                            cout << "1. Piedra ";
+                            cout << "2. Papel ";                                                                                                                                                                                                                                                           
