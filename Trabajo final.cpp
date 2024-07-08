@@ -57,7 +57,7 @@ int main() {
                     } while (true);
                 }
             }
-            
+
             if (!inicioSesion) {
                 cout << "El usuario no existe!\n";
             }
@@ -67,3 +67,15 @@ int main() {
                     system("cls");
                     cout << "--- Bienvenido al casino, elige tu juego y empieza a divertirte! ---\n 1.) Ruleta de la suerte.\n 2.) Piedra, Papel o Tijeras.\n 3.) Salir." << endl;
                     cin >> menu2;
+
+                    switch (menu2) {
+                    case 1:
+                        cout << "--- Bienvenido al juego de la ruleta! ---" << endl;
+                        cout << "Ingrese la cantidad de dinero que quieres agregar a tu cuenta: $";
+                        cin >> balance;
+
+                        system("cls");
+
+                        while (balance > 0) {
+                            cout << "Escoje un numero entre 1 y 20: ";
+                            cin >> numeroEscogido;
