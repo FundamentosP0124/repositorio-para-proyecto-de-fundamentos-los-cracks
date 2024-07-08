@@ -193,4 +193,13 @@ int main() {
 
             case 3:
                 continuar = false;
-                break;                                      
+                break;
+ 
+            default:
+                cout << "Opcion no valida.\n";
+                break;
+        }
+    } while (continuar);
+
+    return 0;
+}                                                     
