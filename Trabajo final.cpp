@@ -79,7 +79,7 @@ int main() {
                         while (balance > 0) {
                             cout << "Escoje un numero entre 1 y 20: ";
                             cin >> numeroEscogido;
-                            
+
                             while (numeroEscogido < 1 || numeroEscogido > 20) {
                                 cout << "Numero invalido. Por favor escoje otro numero que cumpla las condiciones: ";
                                 cin >> numeroEscogido;
@@ -87,3 +87,10 @@ int main() {
 
                             cout << "Cuanto dinero quieres apostar en esta ocasion? $";
                             cin >> betAmount;
+                            
+                            while (betAmount > balance || betAmount <= 0) {
+                                cout << "Apuesta denegada. Esta cantidad de dinero sobrepasa el que tienes en tu cuenta. Por favor ingresa un monto valido: $";
+                                cin >> betAmount;
+                            }
+
+                            numeroRuleta = rand() % 20 + 1;
