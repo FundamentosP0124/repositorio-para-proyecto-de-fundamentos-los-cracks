@@ -99,4 +99,10 @@ int main() {
                             if (numeroEscogido == numeroRuleta) {
                                 cout << "Felicidades, has ganado! No te olvides de dejar una buena propina. Tu ganancia es de: $" << betAmount * 2 << "!" << endl;
                                 balance += betAmount;
-                            } else {                            
+                            } else {
+                               cout << "Mas suerte para la proxima! Has perdido: $" << betAmount << "." << endl;
+                                balance -= betAmount;
+                            }
+
+                            cout << "Tu balance actual es: $" << balance << endl;
+                            char choice;                                                                                                                                                                           
