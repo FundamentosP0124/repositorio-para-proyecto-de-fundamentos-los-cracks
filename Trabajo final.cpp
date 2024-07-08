@@ -139,4 +139,12 @@ int main() {
                             if (seleccionjugador < 1 || seleccionjugador > 3) {
                                 cout << "Opcion no valida" << endl;
                                 break;
-                            }                                                                                                                                                                                                                                                                                       
+                            }
+
+                            cout << "Turno de la computadora" << endl;
+                            int seleccioncomputadora = rand() % 3 + 1;
+
+                            cout << "Tu elegiste: ";
+                            if (seleccionjugador == 1) cout << "Piedra" << endl;
+                            else if (seleccionjugador == 2) cout << "Papel" << endl;
+                            else if (seleccionjugador == 3) cout << "Tijera" << endl;
