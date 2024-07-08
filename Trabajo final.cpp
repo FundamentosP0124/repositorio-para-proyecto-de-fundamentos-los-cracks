@@ -149,4 +149,14 @@ int main() {
                             else if (seleccionjugador == 2) cout << "Papel" << endl;
                             else if (seleccionjugador == 3) cout << "Tijera" << endl;
 
-                            
+                                    cout << "Y la computadora elige... " << endl;
+
+                                    cout << endl;
+
+                                    system("pause");
+
+                                    cout << endl;
+
+                                    if (seleccioncomputadora == 1) cout << "Piedra!" << endl;
+                                    else if (seleccioncomputadora == 2) cout << "Papel!" << endl;
+                                    else if (seleccioncomputadora == 3) cout << "Tijeras!" << endl;
