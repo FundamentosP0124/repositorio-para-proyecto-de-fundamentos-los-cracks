@@ -15,3 +15,13 @@ void opciones(int jugador, int compu) {
         cout << "La computadora gana!\n";
     }
 }
+
+int main() {
+    srand(time(0));
+    int menu = 0;
+    int menu2 = 0;
+    bool continuar = true;
+    bool continuar2 = true;
+    string nombre[100] = {};
+    string usuario[100] = {};
+    string contrasena[100] = {};
