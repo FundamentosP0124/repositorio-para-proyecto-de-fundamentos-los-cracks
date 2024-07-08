@@ -87,10 +87,16 @@ int main() {
 
                             cout << "Cuanto dinero quieres apostar en esta ocasion? $";
                             cin >> betAmount;
-                            
+
                             while (betAmount > balance || betAmount <= 0) {
                                 cout << "Apuesta denegada. Esta cantidad de dinero sobrepasa el que tienes en tu cuenta. Por favor ingresa un monto valido: $";
                                 cin >> betAmount;
                             }
 
                             numeroRuleta = rand() % 20 + 1;
+                           cout << "El numero ganador es: " << numeroRuleta << endl;
+
+                            if (numeroEscogido == numeroRuleta) {
+                                cout << "Felicidades, has ganado! No te olvides de dejar una buena propina. Tu ganancia es de: $" << betAmount * 2 << "!" << endl;
+                                balance += betAmount;
+                            } else {                            
