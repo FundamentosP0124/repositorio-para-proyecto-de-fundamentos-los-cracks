@@ -105,4 +105,12 @@ int main() {
                             }
 
                             cout << "Tu balance actual es: $" << balance << endl;
-                            char choice;                                                                                                                                                                           
+                            char choice;
+                            cout << "Quieres seguir jugando? (s/n): ";
+                            cin >> choice;
+
+                            if (choice != 's' && choice != 'S') {
+                                break;
+                            }
+                            system("cls");
+                        }                                                                                                                                                                                                       
