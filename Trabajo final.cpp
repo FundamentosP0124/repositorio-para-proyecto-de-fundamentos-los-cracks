@@ -113,4 +113,12 @@ int main() {
                                 break;
                             }
                             system("cls");
-                        }                                                                                                                                                                                                       
+                        }
+
+                        cout << "Gracias por jugar! Tu balance final es de: $" << balance << endl;
+                        break;
+
+                    case 2: {
+                        bool jugarOtraVez = true;
+                        do {
+                            system("cls");                                                                                                                                                                                                                               
