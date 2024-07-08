@@ -168,4 +168,14 @@ int main() {
                                     cin >> respuesta;
                                     jugarOtraVez = (respuesta == 's' || respuesta == 'S');
                                 } while (jugarOtraVez);
-                                break;                                    
+                                break;
+                            }
+
+                            case 3:
+                                continuar2 = false;
+                                break;
+
+                            default:
+                                cout << "Opcion no valida. \n";
+                                break;
+                        }                                                                    
