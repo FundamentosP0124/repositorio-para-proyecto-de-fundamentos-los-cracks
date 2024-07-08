@@ -179,3 +179,11 @@ int main() {
                                 cout << "Opcion no valida. \n";
                                 break;
                         }                                                                    
+                     } while (continuar2);
+                }
+                break;
+
+            case 2:
+                cout << "Ingresa tu nombre de usuario: ";
+                cin >> usuario[indiceUsuario];
+                cout << "Ingresa tu contrasena: ";                       
