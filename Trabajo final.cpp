@@ -160,3 +160,12 @@ int main() {
                                     if (seleccioncomputadora == 1) cout << "Piedra!" << endl;
                                     else if (seleccioncomputadora == 2) cout << "Papel!" << endl;
                                     else if (seleccioncomputadora == 3) cout << "Tijeras!" << endl;
+
+                                    opciones(seleccionjugador, seleccioncomputadora);
+
+                                    char respuesta;
+                                    cout << "Quieres jugar otra vez? (s/n): ";
+                                    cin >> respuesta;
+                                    jugarOtraVez = (respuesta == 's' || respuesta == 'S');
+                                } while (jugarOtraVez);
+                                break;                                    
