@@ -25,3 +25,11 @@ int main() {
     string nombre[100] = {};
     string usuario[100] = {};
     string contrasena[100] = {};
+    int indiceUsuario = 0;
+    string usuarioTemporal = "";
+    string contrasenaTemporal = "";
+    bool inicioSesion = false;
+    int balance;
+    int betAmount;
+    int numeroEscogido;
+    int numeroRuleta;
