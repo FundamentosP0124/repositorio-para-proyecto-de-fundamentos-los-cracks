@@ -186,4 +186,11 @@ int main() {
             case 2:
                 cout << "Ingresa tu nombre de usuario: ";
                 cin >> usuario[indiceUsuario];
-                cout << "Ingresa tu contrasena: ";                       
+                cout << "Ingresa tu contrasena: ";
+                cin >> contrasena[indiceUsuario];
+                indiceUsuario++;
+                break;
+
+            case 3:
+                continuar = false;
+                break;                                      
