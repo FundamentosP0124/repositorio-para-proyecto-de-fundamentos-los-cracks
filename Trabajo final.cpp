@@ -40,3 +40,20 @@ int main() {
         cout << "1.) Inicio de sesion \n2.) Registro \n3.) Salir \n";
         cin >> menu;
         switch (menu) {
+         case 1:
+            cout << "Ingresa tu nombre de usuario: ";
+            cin >> usuarioTemporal;
+            for (int i = 0; i < 100; i++) {
+                if (usuarioTemporal == usuario[i]) {
+                    do {
+                        cout << "Ingrese la contrasena: ";
+                        cin >> contrasenaTemporal;
+                        if (contrasenaTemporal == contrasena[i]) {
+                            inicioSesion = true;
+                            break;
+                        } else {
+                            cout << "Contrasena incorrecta. \n";
+                        }
+                    } while (true);
+                }
+            }
