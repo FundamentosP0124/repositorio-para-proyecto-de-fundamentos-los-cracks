@@ -57,3 +57,13 @@ int main() {
                     } while (true);
                 }
             }
+            
+            if (!inicioSesion) {
+                cout << "El usuario no existe!\n";
+            }
+
+            if (inicioSesion) {
+                do {
+                    system("cls");
+                    cout << "--- Bienvenido al casino, elige tu juego y empieza a divertirte! ---\n 1.) Ruleta de la suerte.\n 2.) Piedra, Papel o Tijeras.\n 3.) Salir." << endl;
+                    cin >> menu2;
