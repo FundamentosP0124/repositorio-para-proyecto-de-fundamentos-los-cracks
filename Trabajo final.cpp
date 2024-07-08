@@ -130,4 +130,13 @@ int main() {
                             cout << "--- Bienvenido a Piedra Papel o Tijera! ---" << endl << endl;
                             cout << "Piensa en una opcion para jugar" << endl;
                             cout << "1. Piedra ";
-                            cout << "2. Papel ";                                                                                                                                                                                                                                                           
+                            cout << "2. Papel ";
+                            cout << "3. Tijera ";
+                            cin >> seleccionjugador;
+
+                            system("cls");
+
+                            if (seleccionjugador < 1 || seleccionjugador > 3) {
+                                cout << "Opcion no valida" << endl;
+                                break;
+                            }                                                                                                                                                                                                                                                                                       
