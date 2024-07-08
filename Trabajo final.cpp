@@ -33,3 +33,10 @@ int main() {
     int betAmount;
     int numeroEscogido;
     int numeroRuleta;
+
+      do {
+        system("cls");
+        cout << "--- BIENVENIDO AL SISTEMA DE REGISTRO E INICIO DE SESION DEL CASINO ---" << endl << endl;
+        cout << "1.) Inicio de sesion \n2.) Registro \n3.) Salir \n";
+        cin >> menu;
+        switch (menu) {
